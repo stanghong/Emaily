@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     res.send({ bye: 'buddy' });  // Properly formatted object
 });
 
-const PORT =process.envPORT || 5000;
+const PORT =process.env.PORT || 3000;
 app.listen(PORT);
 
 // app.listen(5001, () => {
