@@ -10,9 +10,12 @@ const express = require('express');  // Fixed typo: 'expresss' to 'express'
 const app = express();  // Added space for readability
 
 app.get('/', (req, res) => {
-    res.send({ hi: 'there' });  // Properly formatted object
+    res.send({ bye: 'buddy' });  // Properly formatted object
 });
 
-app.listen(5001, () => {
-    console.log('Server is running on port 5001');  // Added a console log for server status
-});
+const PORT =process.envPORT || 5000;
+app.listen(PORT);
+
+// app.listen(5001, () => {
+//     console.log('Server is running on port 5001');  // Added a console log for server status
+// });
