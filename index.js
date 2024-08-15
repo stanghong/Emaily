@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // const express = require('expresss');
 // const app =express();
 // 
@@ -30,3 +31,13 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+=======
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send({ hi: 'there' });
+});
+
+app.listen(5001);
+>>>>>>> 0453b64 (first commit)
